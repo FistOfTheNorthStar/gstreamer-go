@@ -200,6 +200,10 @@ func (e *Element) Push(buffer []byte) {
 
 func (e *Element) Poll() <-chan []byte {
 
+	fmt.Println("poll")
+	fmt.Println(e)
+	fmt.Println("end")
+
 	if e.out == nil {
 		e.out = make(chan []byte, 10)
 		//C.gstreamer_element_pull_buffer(e.element, C.int(e.id))
