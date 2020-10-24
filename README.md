@@ -27,7 +27,7 @@ brew install gst-plugins-ugly
 Then
 
 ```sh
-go get github.com/notedit/gstreamer-go
+go get github.com/FistOfTheNorthStar/gstreamer-go
 ```
 
 
